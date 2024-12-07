@@ -1,11 +1,12 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Link from 'next/link'
-import NavLink from './NavLink'
-import { useState } from 'react'
-import { Bars3Icon } from '@heroicons/react/24/solid'
-import { XMarkIcon } from '@heroicons/react/24/solid'
+import React from 'react';
+import Link from 'next/link';
+import NavLink from './NavLink';
+import { useState } from 'react';
+import { Bars3Icon } from '@heroicons/react/24/solid';
+import { XMarkIcon } from '@heroicons/react/24/solid';
+import MenuOverlay from './MenuOverlay';
 
 const navLinks = [
     {
@@ -27,16 +28,16 @@ const navLinks = [
 const Navbar = () => {
     const [navbarOpen, setNavBarOpen] = useState(false);
   return (
-    <nav className="fixed  top-0 left-0 right-0 z-10 bg-purple-950 bg-opacity-90">
-        <div className="flex  flex-wrap items-center justify-between mx-auto px-5">
-            <Link href={'/'} className="text-xl md:text-5xl text-white font-semibold ">VIRGINIA</Link>
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-purple-950 bg-opacity-90">
+        <div className="flex  flex-wrap items-center justify-between mx-auto px-5 py-4">
+            <Link href={'/'} className="text-lg md:text-2xl text-white font-semibold ">VIRGINIA</Link>
 
             <div className="mobile-menu block md:hidden">
-                {navbarOpen ? (
-                    <button className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white  "> <Bars3Icon className="h-5 w-5"/> </button>
+                {!navbarOpen ? (
+                    <button onClick={()=> setNavBarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white  "> <Bars3Icon className="h-5 w-5"/> </button>
                 )
                 : (
-                    <button className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white  "> <XMarkIcon className="h-5 w-5"/> </button>
+                    <button onClick={()=> setNavBarOpen(false)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white  "> <XMarkIcon className="h-5 w-5"/> </button>
                 )
                 
                 }
@@ -60,6 +61,7 @@ const Navbar = () => {
 
             </div>
         </div>
+        {navbarOpen? <MenuOverlay links={navLinks} /> : null }
             
     </nav>
   )
