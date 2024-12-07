@@ -42,7 +42,7 @@ repeat={Infinity}
 </div>
 <p className='text-[ADB7BE] text-base text-lg lg:text-xl mb-6'>dwbhchsajnbchndbhjn</p>
 <div>
-    <button className=" px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-blue-500 via--purple-400 to-pink-500 hover:bg-slate-200 text-white w-full sm:w-fit ">Hire me </button>
+    <button className=" px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-blue-500 via--purple-400 to-pink-500 hover:bg-slate-200 text-white hover:text-black w-full sm:w-fit ">Hire me </button>
     <button className=" px-6 py-3 rounded-full  bg-gradient-to-br from-blue-500 via--purple-400 to-pink-500 text-white hover:bg-slate-200 hover:text-black   mt-3 w-full sm:w-fit" >Download CV </button>
 </div>
 </div>
