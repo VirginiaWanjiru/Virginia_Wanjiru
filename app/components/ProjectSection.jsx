@@ -65,7 +65,7 @@ const ProjectSection = () => {
     <div>
         <h2 className="font-bold text-4xl mb-4 sm:place-items-center">My Projects  </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 text-white py-6 ">
-            <buttons className="rounded-xl border-2 border-purple-500 px-4 py-4 text-xl cursor-pointer">All</buttons>
+            <button className="rounded-xl border-2 border-purple-500 px-4 py-4 text-xl cursor-pointer">All</button>
             <button  className="rounded-xl border-2 border-slate-600 px-4 py-4 text-xl cursor-pointer hover:border-white">Web</button>
             
         </div>
