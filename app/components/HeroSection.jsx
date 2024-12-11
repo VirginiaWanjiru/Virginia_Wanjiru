@@ -15,31 +15,12 @@ const HeroSection = () => {
 <div className="grid grid-cols-1 sm:grid-cols-12 mt-10">
  <div className= "col-span-7 place-self-center text-center sm:text-left"> 
 <h1 className=" mb-4  text-4xl lg:text-5xl sm:text-5xl font-extrabold font-serif "> 
-<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  to-purple-500 ">Hello, I&apos;m Virginia Data Analyst/Engineer </span>
+<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  to-purple-500 ">Hello, I&apos;m Vee <br></br> Data Enthusiast</span>
    </h1>
 
    
     <div className=" text-white mb-4 text-4xl lg:text-2xl sm:text-2xl font-extrabold">
-<TypeAnimation 
-
-sequence ={[
-  'My name is Vee',
-  1000,
-  'Data Analyst ',
-  1000,
-  'IT Project Coordinator',
-  1000,
-  'UX Designer ',
-  1000,
-  'Welcome to my page',
-  1000
-]}
-
-wrapper="span"
-speed={30}
-repeat={Infinity}
-
-/>
+{/* <TypeAnimation sequence ={['',1000,'',1000,'',1000,'',1000,'',1000]}wrapper="span"speed={30} repeat={Infinity}/> */}
     
 </div>
 <p className='text-[ADB7BE] text-base text-balance text-md lg:text-sm mb-6'>

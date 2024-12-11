@@ -5,7 +5,7 @@ import Link from 'next/link'
 const ProjectCard = ({imgUrl, title, description ,gitUrl, previewUrl}) => {
   return (
 
-    <div className=" w-full max-w-md  max-h-md flex-shrink-0 container mx-auto px-4"  > 
+    <div className=" w-full max-w-lg max-h-lg flex-shrink-0 container mx-auto px-4"  > 
         <div className=" h-52 md:h-72 relative group "
         style={{ background: `url(${imgUrl})`,backgroundSize: "cover"}}> 
 
@@ -17,17 +17,19 @@ const ProjectCard = ({imgUrl, title, description ,gitUrl, previewUrl}) => {
             <Link href="/" className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
             <EyeIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#ADB7BE]  cursor-pointer group-hover/link:text-white"/>
             </Link>
-        </div>
+       
        
         </div>
-        <div className="text-white mt-2 rounded-b-xl bg-[#181818] py-6 px-4">
+        </div>
+        <div className="text-white  bg-[#5c5757] bg-opacity-50 px-1 py-1">
             
             <h5 className="font-xl font-bold text-xl md:text-xl sm:text-xl ">{title}</h5>
-            <p className="text-[#ADB7BE] mb-10">{description}</p>
+            <p className="text-[#ADB7BE]">{description}</p>
 
         </div>
 
     </div>
+ 
   
   )
 }
