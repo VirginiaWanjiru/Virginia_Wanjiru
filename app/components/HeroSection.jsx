@@ -12,7 +12,7 @@ const HeroSection = () => {
 
     
     <section>
-<div className="grid grid-cols-1 sm:grid-cols-12 mt-20">
+<div className="grid grid-cols-1 sm:grid-cols-12 mt-10">
  <div className= "col-span-7 place-self-center text-center sm:text-left"> 
 <h1 className=" mb-4  text-4xl lg:text-5xl sm:text-5xl font-extrabold font-serif "> 
 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  to-purple-500 ">Hello, I&apos;m Virginia Data Analyst/Engineer </span>
