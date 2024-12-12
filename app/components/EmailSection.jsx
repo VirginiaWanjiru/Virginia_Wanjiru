@@ -28,7 +28,7 @@ const EmailSection = () => {
             <form className="flex flex-col ">
                 <div className="mb-6">
                 <label htmlFor="email" className="text-white block text-sm font-medium">Your Email</label>
-                <input className=" bg-[#18191E] border border-[#33353] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2" name="email" type="email" id="email" required placeholder="johndoe@gmail.com" />
+                <input className=" bg-[#18191E] border border-[#33353] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2" name="email" type="email" id="email" required placeholder="Your Email" />
                 </div>
                 <div className="mb-6">
                 <label htmlFor="subject">Subject</label>
