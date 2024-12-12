@@ -14,7 +14,7 @@ const ProjectCard = ({imgUrl, title, description ,gitUrl, previewUrl}) => {
             <CodeBracketIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#ADB7BE]  cursor-pointer group-hover/link:text-white"/>
             </Link>
 
-            <Link href="/" className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
+            <Link href={gitUrl} className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
             <EyeIcon className="h-10 w-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#ADB7BE]  cursor-pointer group-hover/link:text-white"/>
             </Link>
        

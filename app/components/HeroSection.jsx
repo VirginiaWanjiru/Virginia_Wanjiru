@@ -15,20 +15,18 @@ const HeroSection = () => {
 <div className="grid grid-cols-1 sm:grid-cols-12 mt-10">
  <div className= "col-span-7 place-self-center text-center sm:text-left"> 
 <h1 className=" mb-4  text-4xl lg:text-5xl sm:text-5xl font-extrabold font-serif "> 
-<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  to-purple-500 ">Hello, I&apos;m Vee <br></br> Data Enthusiast</span>
+<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400  to-purple-500 ">Hello, I&apos;m Vee</span>
    </h1>
 
    
     <div className=" text-white mb-4 text-4xl lg:text-2xl sm:text-2xl font-extrabold">
-{/* <TypeAnimation sequence ={['',1000,'',1000,'',1000,'',1000,'',1000]}wrapper="span"speed={30} repeat={Infinity}/> */}
+ <TypeAnimation sequence ={['Data Enthusiast',1000,'Front-End Web Developer',1000,'IT Project Manager',1000,'',1000,'',1000]}wrapper="span"speed={30} repeat={Infinity}/> 
     
 </div>
 <p className='text-[ADB7BE] text-base text-balance text-md lg:text-sm mb-6'>
-A motivated Business and Information Technology graduate from Strathmore University with a strong background in
-Business Information Technology. Experienced in working within fast-paced environments, brings excellent
-communication, organizational skills, and attention to detail, coupled with proficiency in digital tools. Has experience
-in web development, artificial intelligence, data analysis, UX Design and IT Project Management to bring to life
-scalable and realistic tech solutions.
+A motivated Business and Information Technology graduate from Strathmore University with a strong 
+skillset in Front-End Web development, Data analysis/Business Intelligence & IT Project 
+Management.
 </p>
 <div>
     <button className=" px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-blue-500 via--purple-400 to-pink-500 hover:bg-slate-200 text-white hover:text-black w-full sm:w-fit ">Hire me </button>

@@ -8,18 +8,18 @@ import Image from "next/image"
 
 const EmailSection = () => {
   return (
-   <section className=" grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4  bg-gradient-to-r from-blue-400 via-purple-500 to-pink-700 rounded-lg px-4 py-4 gap-4 relative">
+   <section className=" grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4  bg-gradient-to-r from-blue-400 via-purple-500 to-pink-700 rounded-lg px-4 py-4 gap-4 relative" id="contact">
     <div>
     <h5 className="text-2xl font-bold text-black my-2 mb-4"> Lets Connect </h5>
     <p className="text-neutral-200 mb-8 max-w-md"> 
     Looking for opportunities. My inbox is always open. Whether you have a question or just a hi, I&apos;ll try my best to get back to you.
     </p>
     <div className="socials flex flex-row gap-4 container border max-w-fit px-3 py-3 rounded-xl border-black ">
-    <Link href="github.com">
+    <Link href="https://github.com/VirginiaWanjiru">
     <Image src={GitHubIcon} alt="githubicon" className="h-10 w-auto" />
     </Link>
 
-    <Link href="Linkedin.com">
+    <Link href="https://www.linkedin.com/in/virginia-wanjiru-0852641b0/">
     <Image src={LinkedinIcon} alt="linkedicon" className="h-10 w-auto"/>
     </Link>
     </div>

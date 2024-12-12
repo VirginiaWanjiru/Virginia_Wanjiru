@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import {useTransition, useState} from "react";
 import TabButton from "./TabButton";
+import Me from "@/public/images/projects/me.png";
 
 const TAB_DATA =[
     {
@@ -12,10 +13,10 @@ const TAB_DATA =[
         content: (
             <ul className=" list-disc pl-2  ">
                 <li>
-                   Front-End Development: React, NextJs, TailwindCSS, FramerMotion
+                   Front-End Development: HTML, CSS, Javascript, React, NextJs, TailwindCSS, FramerMotion
                 </li>
                 <li>
-                Databases: MySQL, Firebase, PostgreSQL 
+                Databases: MySQL, PostgreSQL 
                 </li>
                 <li>
                     Python
@@ -23,15 +24,7 @@ const TAB_DATA =[
                 <li>
                     PowerBI
                 </li>
-                <li>
-                    Apache Spark
-                </li>
-                <li>
-                    Apache Nifi 
-                </li>
-                <li>
-                    Apache Kafka
-                </li>
+                
             </ul>
         )
     },
@@ -102,15 +95,18 @@ const AboutSection = () => {
 
 
   return (
-    <section className="text-white">
-        <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:py-16">
-        <Image src="/lavender.png" alt="hdhdd" width={500} height={500}/>
-        <div className=" mt-4 md:mt-0 text-left flex flex-col h-full">
+    <section className="text-white  " id="about">
+        <div className="md:grid md:grid-cols-2 gap-4 items-center py-4 px-4 xl:gap-12 sm:py-12 xl:py-12 ml-20 ">
+        <div><Image src={Me} alt="hdhdd" width={300} height={250} className="rounded"/> </div>
+        <div className=" mt-4 md:mt-0 text-left flex flex-col h-full  ">
         <div> 
             <h2 className="text-4xl font-bold text-white mb-4 "> 
                 About Me
             </h2>
-            <p className=" text-base lg:text-lg ">dhshsdfhsdshshdjsjsjsjshs</p>
+            <p className=" text-base lg:text-sm ">Experienced in working within fast-paced environments, brings excellent
+            communication, organizational skills, and attention to detail, coupled with proficiency in digital tools. 
+            Has experience in web development, artificial intelligence, data analysis, UX Design and IT Project Management to bring to life
+            scalable and realistic tech solutions.</p>
 
             <div className="flex flex-row justify-start mt-8  ">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}> Skills </TabButton>

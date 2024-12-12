@@ -11,56 +11,40 @@ const projectsData = [
         id:1,
         title: "React Website",
         description:" Audit Firm Website for a client H.W. Gichohi ",
-        image:"/images/projects/picture3.jpg",
+        image:"/images/projects/react.png",
         tag:["Web"],
-        gitUrl :"/",
-        previewUrl:"/"
+        gitUrl:"https://github.com/VirginiaWanjiru/HWGichohiWebsite.git",
+        previewUrl:"https://hw-gichohi-website.vercel.app/"
     },
     {
         id:2,
         title: "FAMA - FarmersConnectWeb ",
         description:" Farmers connect website integrated with Machine learning ",
-        image:"/images/projects/picture3.jpg",
-        tag:["Web"],
-        gitUrl :"/",
+        image:"/images/projects/crop.png",
+        tag:["Web", "Data"],
+        gitUrl :"https://github.com/VirginiaWanjiru/FAMA-FarmersConnectWeb",
         previewUrl:"/"
     },
 {
     id:3,
     title: "BI Crop Prediction Analytics",
     description:" Crop Prediction Analytics",
-    image:"/images/projects/picture3.jpg",
+    image:"/images/projects/data.jpg",
     tag:["Data"],
-    gitUrl :"/",
-    previewUrl:"/"
+    gitUrl :"https://github.com/VirginiaWanjiru/BIProject-Crop-Prediction-Analytics",
+    previewUrl:"{No preview}"
 },
 {
     id:4,
     title: " Promotion App for Shopping Malls ",
     description:" Project was about designing the UI for the mobile application",
-    image:"/images/projects/picture3.jpg",
+    image:"/images/projects/figma.png",
     tag:["Design"],
-    gitUrl :"/",
-    previewUrl:"/"
-},
-{
-    id:5,
-    title: " Promotion App for Shopping Malls ",
-    description:" Project was about designing the UI for the mobile application",
-    image:"/images/projects/picture3.jpg",
-    tag:["Data"],
-    gitUrl :"/",
-    previewUrl:"/"
-},
-{
-    id:6,
-    title: " Promotion App for Shopping Malls ",
-    description:" Project was about designing the UI for the mobile application",
-    image:"/images/projects/picture3.jpg",
-    tag:["Design"],
-    gitUrl :"/",
-    previewUrl:"/"
+    gitUrl :"https://www.figma.com/design/VzwWG3ciXJOYszyUiizL01/Soko-V2?node-id=410-1342&node-type=canvas&t=fVDEwefU9vBrmLqi-0",
+    previewUrl:"https://www.figma.com/design/VzwWG3ciXJOYszyUiizL01/Soko-V2?node-id=410-1342&node-type=canvas&t=fVDEwefU9vBrmLqi-0"
 }
+
+
 ]
 
 
@@ -76,9 +60,9 @@ const ProjectSection = () => {
     );
 
   return (
-    <div  className="container mb-10">
+    <div  className="container mb-10" id="projects">
         <h2 className="text-center font-bold text-4xl mb-2 sm:place-items-center">My Projects  </h2>
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-10 ">
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-10 rounded-lg">
             <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
             <ProjectTag onClick={handleTagChange} name="Design" isSelected={tag === "Design"} />
             <ProjectTag onClick={handleTagChange} name="Data" isSelected={tag === "Data"} />
