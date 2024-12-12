@@ -84,7 +84,7 @@ const ProjectSection = () => {
             <ProjectTag onClick={handleTagChange} name="Data" isSelected={tag === "Data"} />
             
         </div>
-        <div className="flex flex-wrap justify-center " > {filteredProjects.map((project)=> <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} tags={project} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)} </div>
+        <div className="flex flex-cols-4 justify-center " > {filteredProjects.map((project)=> <ProjectCard key={project.id} title={project.title} description={project.description} imgUrl={project.image} tags={project} gitUrl={project.gitUrl} previewUrl={project.previewUrl}/>)} </div>
     </div>
   )
 }
